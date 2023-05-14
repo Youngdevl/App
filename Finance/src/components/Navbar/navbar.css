@@ -1,0 +1,14 @@
+#backg{
+    margin-top: -3%;
+}
+
+#pitch{
+    background-color: rgb(13, 13, 36);
+    color: #fff !important;
+    font-size: 20px;
+    border-radius: 2%;
+    padding: 8%;
+}
+#touch{
+    color:rgb(25, 25, 91) !important;
+}

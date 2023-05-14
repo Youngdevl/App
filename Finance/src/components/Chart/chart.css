@@ -1,0 +1,26 @@
+#wep{
+    margin-left: 45%;
+    margin-top: 4%;
+    text-align: center;
+}
+
+#wep h4{
+    color: grey;
+    font-weight: 500;
+}
+
+#wep h5{
+    font-weight: 700;
+    color: #000;
+}
+
+#wep span{
+    background-color: rgba(208, 208, 40, 0.842);
+    font-size: 12px;
+    border-radius: 18%;
+}
+#wep li{
+    border-radius: 2%;
+    padding-bottom: 3%;
+    border: 1px solid rgb(13, 13, 36);;
+}
