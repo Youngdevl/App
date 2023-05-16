@@ -1,17 +1,14 @@
-import Tip from './components/Tips/tip';
-import Card from './components/Card/card'
-import Chart from './components/Chart/chart'
-import Navbar from './components/Navbar/navbar'
+import Tex from '../Tex/tex'
+import Navbar from '../Navbar/navbar'
 import { useState } from "react";
-import "./App.css";
-import loft from "./assets/Chart_fill.png";
-import chat from './assets/Chart.png'
-import user from './assets/User.png'
-import calendar from './assets/Calendar.png'
-import search from './assets/Search.png'
-import analytics from './assets/Chart.png'
-import  folder from './assets/Folder.png'
-import setting from './assets/Setting.png'
+import loft from "../assets/Chart_fill.png";
+import chat from '../assets/Chart.png'
+import user from '../assets/User.png'
+import calendar from '../assets/Calendar.png'
+import search from '../assets/Search.png'
+import analytics from '../assets/Chart.png'
+import  folder from '../assets/Folder.png'
+import setting from '../assets/Setting.png'
 const App = () => {
   const [open, setOpen] = useState(true);
   // const Menus = [
@@ -42,17 +39,12 @@ const App = () => {
             onClick={() => setOpen(!open)}
           />
            <div className="flex gap-x-4 items-center">
-          {/* <img
-            src="./src/assets/logo.png"
-            className={`cursor-pointer duration-500 ${
+          <img id='hards'
+            src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+            className={`cursor-pointer duration-500 inline-block h-20 w-20 rounded-full ring-2 ring-white ${
               open && "rotate-[360deg]"
             }`}
-          /> */}
-         <img id='hards'
-          className="inline-block h-20 w-20 rounded-full ring-2 ring-white"
-          src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          alt=""
-        />
+          />
           <h1 id='home'
             className={`text-white origin-left font-medium text-xl duration-200 ${
               !open && "scale-0"
@@ -61,6 +53,7 @@ const App = () => {
             Jennifer
           </h1>
         </div>  
+        
        <div>
        <h5 id="top"  className={`${
               !open && "scale-0"
@@ -70,26 +63,25 @@ const App = () => {
             }`}>$246,030</h2>
        </div>
           <ul className="pt-6">
-            <li className=" bg-light-white flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-white text-sm items-center gap-x-4 ">
+            <li className="  flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-white text-sm items-center gap-x-4 ">
               <img src={loft} />
-              <a href='/'><span className={`${!open && "hidden"} origin-left duration-200`}>
+          <a href='/'>    <span className={`${!open && "hidden"} origin-left duration-200`}>
                 Dashboard
               </span></a>
             </li>
 
-            <li className=" mt-2 flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-white text-sm items-center gap-x-4 ">
+            <li className="mt-2 flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-white text-sm items-center gap-x-4 ">
               <img src={chat} />
               <a href="/inbox"><span className={`${!open && "hidden"} origin-left duration-200`}>
                 Inbox
-              </span>
-              &nbsp;&nbsp;&nbsp;
+              </span> &nbsp;&nbsp;
               <span id="hard" className="left-6 top-0 start-100 translate-middle badge rounded-pill bg-danger">
     9+
     <span className="visually-hidden">unread messages</span>
   </span>
               </a>
             </li>
-            <li className="mt-9 flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-white text-sm items-center gap-x-4 ">
+            <li className=" bg-light-white mt-9 flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-white text-sm items-center gap-x-4 ">
               <img src={user} />
          <a href="/trans">     <span className={`${!open && "hidden"} origin-left duration-200`}>
                 Account Transactions
@@ -129,9 +121,7 @@ const App = () => {
         </div>
         <div className=" flex-1 p-7">
          <Navbar/>
-         <Card/>
-         <Tip/>
-         <Chart/>
+         <Tex/>
         </div>
       </div>
     </>

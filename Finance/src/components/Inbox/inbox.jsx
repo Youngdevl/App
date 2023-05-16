@@ -84,7 +84,7 @@ const App = () => {
             </li>
             <li className="mt-9 flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-white text-sm items-center gap-x-4 ">
               <img src={user} />
-         <a href="/transact">     <span className={`${!open && "hidden"} origin-left duration-200`}>
+         <a href="/trans">     <span className={`${!open && "hidden"} origin-left duration-200`}>
                 Account Transactions
               </span></a>
             </li>
