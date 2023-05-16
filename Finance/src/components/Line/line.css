@@ -1,0 +1,8 @@
+#jm{
+    margin-top: 3%;
+}
+@media all and (max-width: 1024px){
+  #jm{
+    display: none;
+  }
+}
