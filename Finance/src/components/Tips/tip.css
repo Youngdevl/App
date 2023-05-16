@@ -40,3 +40,9 @@
 #cl2{
     background: green !important;
 }
+
+@media all and (max-width: 1024px){
+    #style ul{
+        display: inline-block !important;
+    }
+}

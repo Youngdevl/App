@@ -14,3 +14,10 @@
     color: gray;
     padding-left: 40%;
 }
+
+@media all and (max-width: 1024px){
+    #hold h1{
+        font-size: 20px;
+        margin-left: 4%;
+    }
+}

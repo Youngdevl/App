@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
-
+import './line.css'
 class App extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +17,7 @@ class App extends Component {
       },
       series: [{
         type: 'line',
-        data: [30,40,50,60,70,80,90]
+        data: [630,40,50,160,70,80,490]
       }, {
         type: 'column',
         data: [100,200,300,400,500,600,700,900,1000]
@@ -27,14 +27,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="app">
+      <div className="app" id="jm">
         <div className="row">
           <div className="mixed-chart">
           <Chart
     options={this.state.options}
     series={this.state.series}
     type="line"
-    width="500"
+    width="600"
   />
           </div>
         </div>

@@ -5,7 +5,6 @@
 }
 
 #wep h4{
-    color: grey;
     font-weight: 500;
 }
 
@@ -13,14 +12,48 @@
     font-weight: 700;
     color: #000;
 }
-
+#dir{
+    margin-top: 20%;
+}
+#jg{
+    display: flex;
+    float: right;
+    justify-content: space-evenly;
+}
 #wep span{
-    background-color: rgba(208, 208, 40, 0.842);
+    background-color: rgba(65, 208, 40, 0.842);
     font-size: 12px;
-    border-radius: 18%;
+    border-radius: 40%;
 }
 #wep li{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 2%;
+    background-color: rgba(51, 151, 51, 0.762);
+    color: #fff !important;
     padding-bottom: 3%;
-    border-bottom: 1px solid grey;
+    border: transparent;
+}
+
+#wep ul {
+    padding-left: -30%;
+}
+
+#wep p{
+    font-size: 13px;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2%;
+}
+
+@media all and (max-width: 1024px){
+    #wep{
+        display:inline-block;
+        margin-top: -150%;
+    }
+    .bacl{
+        margin-top: -30% !important;
+        display: none !important;
+    }
+    #jg img{
+        display: none;
+    }
 }

@@ -41,21 +41,26 @@ const App = () => {
            border-2 rounded-full  ${!open && "rotate-180"}`}
             onClick={() => setOpen(!open)}
           />
-          {/* <div className="flex gap-x-4 items-center">
-          <img
+           <div className="flex gap-x-4 items-center">
+          {/* <img
             src="./src/assets/logo.png"
             className={`cursor-pointer duration-500 ${
               open && "rotate-[360deg]"
             }`}
-          />
-          <h1
+          /> */}
+         <img id='hards'
+          className="inline-block h-20 w-20 rounded-full ring-2 ring-white"
+          src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+          alt=""
+        />
+          <h1 id='home'
             className={`text-white origin-left font-medium text-xl duration-200 ${
               !open && "scale-0"
             }`}
           >
-            Thunkable
+            Jennifer
           </h1>
-        </div>  */}
+        </div>  
        <div>
        <h5 id="top"  className={`${
               !open && "scale-0"
@@ -76,7 +81,13 @@ const App = () => {
               <img src={chat} />
               <a href="/inbox"><span className={`${!open && "hidden"} origin-left duration-200`}>
                 Inbox
-              </span></a>
+              </span>
+              &nbsp;&nbsp;&nbsp;
+              <span id="hard" className="left-6 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    9+
+    <span className="visually-hidden">unread messages</span>
+  </span>
+              </a>
             </li>
             <li className="mt-9 flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-white text-sm items-center gap-x-4 ">
               <img src={user} />

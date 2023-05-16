@@ -1,0 +1,22 @@
+#who ul{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+border: transparent !important;
+margin-bottom: 2%;
+    padding: 1px;
+}
+#who{
+    margin-top: 2%;
+}
+#jb{
+    font-weight: 500;
+    font-size: 13px;
+    margin-left: 1%;
+}
+#hn{
+    margin-left: 3%;
+}
+#lad {
+    color: grey;
+}
